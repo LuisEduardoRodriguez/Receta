@@ -1,0 +1,125 @@
+<!-- comentario -->
+<!DOCTYPE html>
+<!-- Doctype-Es uan instrucción especial que si o si debe ir al inicio de nuestro documento HTML, permite al navegador entender que version de HTML estamos utilizando , version(HTML5)-->
+
+<html lang="en">
+  <!--indicar el idioma que se va a utilizar en el contenido , buenas practicas - SEO - Posicionamiento de Google -->
+
+  <head>
+    <!-- Cabezera- Son metadatos (información-texto importante, que repesentan) las configuraciones que necesito primordiales de mi página , y los usa en navegador.
+    Aquí van las conexiones con otros archivos importantes como CSS,JS,Framework, Tipografias de google , algo externo que necesite en mi página -->
+
+    <meta charset="UTF-8" />
+    <!--Caracteres especiales, ñ o ingles, lenguajes como hebreo , chino que tienen diferente escritura  -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- COmpatibilidad, navegador internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--el diseño inicial adaptable de mi página-->
+    <title>El chef</title>
+    <!--Colocar un titulo a mi página visible en la pestaña del navegador o marcador-->
+    <link
+      rel="shortcut icon"
+      href="../receta/imagen/galleta.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Raleway:wght@100&family=The+Nautigal&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Contenido-->
+
+    <!-- encabezado de la página
+        header - el logo, el menu o hasta un banner -  -->
+    <header>
+      <!--nav- Para indicar el menu -->
+      <div>
+        <a href="./index.html">
+          <img class="img-logo" src="./imagen/logo.png" alt="logo"
+        /></a>
+        <!-- sirve para indicar que se usa imagen, video , audio (multimedia) -->
+      </div>
+      <nav>
+        <ul class="barradenavegacion">
+          <!--lista no ordenada -->
+          <li><a href="#"> Inicio </a></li>
+
+          <li>
+            <a href="./receta_colombiana/recetacolombiana.html" target="_blank"
+              >Receta colombiana
+            </a>
+          </li>
+
+          <li>
+            <a href="./receta_mexicana/recetamexicana.html">Receta Mexicana </a>
+          </li>
+
+          <li><a href="#">comida_saludable </a></li>
+        </ul>
+      </nav>
+      <img class="banner" src="./imagen/banner.jpg" alt="banner" />
+    </header>
+
+    <section class="featured">
+      <article>
+        <iframe
+          class="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bhi74---e_k"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <div class="ft-receta">
+          <h2>Receta del mundo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsa
+            dolorum necessitatibus sed incidunt assumenda numquam, quas
+            obcaecati blanditiis facere hic laborum distinctio, in amet, dolores
+            soluta dolorem dolore adipisci?
+          </p>
+          <div class="boton-contenedor">
+            <a href="#">
+              <div class="boton">Mas Info</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- <video controls src=""></video>  linea para agragar video local-->
+      </article>
+    </section>
+
+    <section>
+      <article class="articulo">
+         <figure >
+            <img class="art-image" src="./imagen/article02.jpg" alt="imagen2">
+         </figure>
+
+         <div class="art-cont">
+            <h3> Diez recetas deliciosas para fiestas navideñas</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem similique asperiores dolor, dolorum quaerat rerum voluptatum sed provident vitae maxime, quo repellat saepe rem reiciendis possimus iusto accusamus magni architecto.</p>
+         </div>
+
+      </article>
+      <article class="articulo">
+         <figure >
+            <img class="art-image" src="./imagen/article03.jpg" alt="imagen3">
+         </figure>
+
+         <div class="art-cont">
+            <h3> Comida Saludable</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem similique asperiores dolor, dolorum quaerat rerum voluptatum sed provident vitae maxime, quo repellat saepe rem reiciendis possimus iusto accusamus magni architecto.</p>
+         </div>
+      </article>
+    </section>
+  </body>
+</html>

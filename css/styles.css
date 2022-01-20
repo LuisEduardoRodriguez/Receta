@@ -1,0 +1,136 @@
+body {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-position: right; */
+  /* background-attachment: fixed; para que la imagen de fondo quede fija */
+
+  font-family: "Luxurious Roman", cursive;
+  /* dar negrilla a los textos */
+  font-weight: 300;
+  /* añade el border y el padding */
+  box-sizing: border-box;
+  /* maximo de ancho */
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+/* forma de ajustar margin */
+/* margin-top: 0; 
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;*/
+
+/* forma 3 de ajustar margin */
+/* margin: 10px 20px 40px 10px; */
+.img-logo {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+nav {
+  font-family: "Luxurious Roman", cursive;
+
+  /* tamaño de letra */
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 0px 20px 0px;
+}
+.barradenavegacion {
+  display: inline-flex;
+  /* para quitar las biñetas de la lista */
+  list-style: none;
+  /* para que no se modifique el margin, ni el padding */
+  margin: 0;
+  padding: 0;
+}
+
+/* selector decendiente */
+nav ul li {
+  list-style-type: none;
+  transition: 0.8s all;
+  -webkit-transition: 0.8s all;
+  -moz-transition: 0.8s all;
+  -ms-transition: 0.8s all;
+  -o-transition: 0.8s all;
+}
+
+nav li {
+  border-right: 1px solid darkblue;
+  padding: 20px 20px;
+}
+
+nav ul li:hover {
+  background-color: rgba(240, 193, 140, 0.63);
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+a:link {
+  color: cornflowerblue;
+}
+a:visited {
+  color: black;
+}
+a:active {
+  color: chocolate;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Luxurious Roman", cursive;
+  font-size: 24px;
+  padding-top: 20px;
+}
+.banner {
+  width: 100%;
+}
+.featured {
+  padding: 0 10px;
+  background-color: darkkhaki;
+  overflow: hidden; /* acomodar el contenido que se sale, o hace flta*/
+}
+.video {
+  padding: 1em;
+}
+.ft-receta {
+  width: 38%;
+  font-size: 0.9em;
+  background-color: darkorange;
+  margin: 20px 0;
+  vertical-align: top;
+}
+.video,
+.ft-receta {
+  display: inline-block;
+}
+.ft-receta h2 {
+  border-bottom: solid thin black;
+}
+.boton-contenedor {
+  text-align: center;
+  background-color: brown;
+}
+.boton-contenedor a {
+  text-decoration: none; /*  quitar la linea del hipervinculo */
+  color: burlywood;
+}
+.boton-contenedor:hover {
+  background-color: rgb(44, 139, 194);
+}
+.boton {
+  padding: 15px;
+}
+.articulo {
+  padding: 30px;
+  background-color: darkgoldenrod;
+  margin: 20px;
+}
+.art-image,.art-cont {
+  width: 100%;
+  text-align: center;
+}
